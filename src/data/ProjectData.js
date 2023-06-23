@@ -1,52 +1,52 @@
-import Project1 from "../assets/projects/project1.jpg"
-import Project2 from "../assets/projects/project2.jpg"
-import Project3 from "../assets/projects/project3.jpg"
-import Project4 from "../assets/projects/project4.jpg"
-import Project5 from "../assets/projects/project5.jpg"
-import Project6 from "../assets/projects/project6.jpg"
+import Project1 from "../assets/projects/project1.png"
+import Project2 from "../assets/projects/Social-Blogging.png"
+import Project3 from "../assets/projects/Wish-List.png"
+import Project4 from "../assets/projects/Last-Chapter.png"
+import Project5 from "../assets/projects/quiz.png"
+import Project6 from "../assets/projects/imageprocessing.png"
 
 const ProjectData = [
   {
     id: "project1",
-    title: "Getting tickets to the next show",
-    category: "Development",
+    title: "ScreenSizzle",
+    category: "MERN/Development",
     img: Project1,
-    link: "http://github.com/ratul-devr"
+    link: "https://github.com/Anas-jpg/Cinema-Application"
   },
   {
     id: "project2",
-    title: "You can see your Portfolio",
-    category: "Freelancer",
+    title: "Social Blogging Application",
+    category: "MERN/Development",
     img: Project2,
-    link: "http://github.com/ratul-devr"
+    link: "https://github.com/Anas-jpg/Social-Networking-App"
   },
   {
     id: "project3",
-    title: "The Language of Developer",
-    category: "App Development",
+    title: "React Wishlist widget",
+    category: "React/Development",
     img: Project3,
-    link: "http://github.com/ratul-devr"
+    link: "https://github.com/Anas-jpg/React-Wishlist-Widget"
   },
   {
     id: "project4",
-    title: "How To Find The Right Agency For Your Specific Product",
-    category: "Development",
+    title: "The Last Chapter- Book Store",
+    category: "Java/Development",
     img: Project4,
-    link: "http://github.com/ratul-devr"
+    link: "https://github.com/Anas-jpg/Assigment-And-Project/tree/main/Semester%205/Software%20Construction%20Development/Project-SCD"
   },
   {
     id: "project5",
-    title: "The Ultimate Guide To Agency",
-    category: "Mobile App",
+    title: "Quiz App",
+    category: "HTML/CSS Development",
     img: Project5,
-    link: "http://github.com/ratul-devr"
+    link: "https://anasjsquiz.netlify.app/"
   },
   {
     id: "project6",
-    title: "How To Turn Your Agency From Zero To Hero",
-    category: "Graphic",
+    title: "Social Networking App",
+    category: "OOP-C++/Development",
     img: Project6,
-    link: "http://github.com/ratul-devr"
+    link: "https://github.com/Anas-jpg/Assigment-And-Project/tree/main/Semester-2/Social-Networking%20Project%20with%20OOP%20concepts"
   },
 ]
 

@@ -6,7 +6,7 @@ const Projects = () => {
     <section className="projects_section" id="project">
       <SectionTitle
         title="My Latest Project"
-        desc="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration."
+        desc="Dive into the realm of projects, where possibilities know no bounds."
       />
 
       <div className="projects_wrapper">

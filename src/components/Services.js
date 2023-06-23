@@ -5,8 +5,10 @@ const Services = () => {
   return (
     <section className="services_section" id="service">
       <SectionTitle
-        title="My Awesome Service"
-        desc="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration."
+        title="Skills"
+        desc="In a world hungry for greatness, your skills are the feast.
+
+        ."
       />
 
       <div className="service_content_wrapper">
