@@ -4,23 +4,24 @@ import ServiceData from "../data/ServiceData"
 const Services = () => {
   return (
     <section className="services_section" id="service">
-      <SectionTitle
-        title="Skills"
-        desc="In a world hungry for greatness, your skills are the feast.
+      <div className="container">
+        <h2 className="section-title">Technical Skills</h2>
 
-        ."
-      />
-
-      <div className="service_content_wrapper">
-        {ServiceData.map((service, index) => {
-          return (
-            <div className="single_service" key={index}>
-              <h2 className="icon">{service.icon}</h2>
-              <h2>{service.title}</h2>
-              <p>{service.desc}</p>
-            </div>
-          )
-        })}
+        <div className="service_content_wrapper">
+          {ServiceData.map((service, index) => {
+            return (
+              <div className="single_service" key={index}>
+                <div className="service-content">
+                  <div className="service-icon">
+                    {service.icon}
+                  </div>
+                  <h3>{service.title}</h3>
+                  <p>{service.desc}</p>
+                </div>
+              </div>
+            )
+          })}
+        </div>
       </div>
     </section>
   );

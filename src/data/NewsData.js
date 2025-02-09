@@ -4,16 +4,16 @@ import News3 from "../assets/news/news3.jpg"
 
 const NewsData = [
   {
-    title: "Development",
-    desc: "Have You Heard? Agency Is Your Best Bet To Grow",
+    title: "My Coding Journey",
+    desc: "A journey from confusion to reality",
     img: News1,
-    link: "http://github.com/ratul-devr"
+    link: "https://muhammadanasl201306.blogspot.com/2023/01/coding-journey.html"
   },
   {
     title: "Development, Gallery",
-    desc: "Agency Works Only Under These Conditions",
+    desc: "Delve into e realms of happiness and discover the keys to leading a truly fulfilling life",
     img: News2,
-    link: "http://github.com/ratul-devr"
+    link: "https://muhammadanasl201306.blogspot.com/2023/06/the-pursuit-of-happiness-unraveling.html"
   },
   {
     title: "Development",

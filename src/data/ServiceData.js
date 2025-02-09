@@ -1,6 +1,22 @@
 const ServiceData = [
   {
     icon: <i className="fas fa-tv"></i>,
+    title: "Python",
+    desc: "The versatile and beginner-friendly programming language, Python empowers developers to build applications, automate tasks, and delve into data science with ease."
+  },
+  {
+    icon: <i className="fas fa-tv"></i>,
+    title: "Django",
+    desc: "A high-level Python web framework, Django accelerates web development with its robust features, security, and scalability, perfect for building sophisticated web applications."
+  },
+  {
+    icon: <i className="fas fa-tv"></i>,
+    title: "DRF",
+    desc: "The Django Rest Framework (DRF) simplifies API development, providing tools to build powerful, scalable, and easy-to-maintain RESTful services."
+  },
+
+  {
+    icon: <i className="fas fa-tv"></i>,
     title: "HTML/CSS",
     desc: "Sculpting stunning web designs, HTML and CSS blend aesthetics with structure, turning imagination into reality"
   },
