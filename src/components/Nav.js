@@ -102,17 +102,22 @@ const Nav = () => {
           justify-content: space-between;
           height: 25px;
           cursor: pointer;
+          z-index: 101;
+          position: relative;
+          margin-right: 15px;
         }
 
-        .line {
-          height: 3px;
+        .bars div {
           width: 25px;
-          background-color: white;
-          transition: all 0.3s ease;
+          height: 2px;
+          margin: 4px 0;
+          background: #f9004d;
+          transition: 0.3s;
         }
 
         .nav-active {
-          display: block;
+          transform: translateX(0) !important;
+          box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
         }
 
         .contact_button button {

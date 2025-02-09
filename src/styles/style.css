@@ -3,8 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: Poppins;
   outline: none;
   text-decoration: none;
@@ -27,6 +26,8 @@ body {
   background: #000;
   color: #fff;
   overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 section {
@@ -54,6 +55,8 @@ html {
 .container {
   width: 1000px;
   margin: auto;
+  padding: 0 15px;
+  max-width: 100%;
 }
 
 .top {
@@ -1276,7 +1279,7 @@ header {
     padding: 0 20px;
   }
   .container {
-    width: 90%;
+    width: 100%;
     padding: 0 15px;
   }
   .contact_button {
@@ -1306,11 +1309,30 @@ header {
     margin-top: 15px;
   }
   .about_section .about_section_content_wrapper {
-    gap: 30px;
+    flex-direction: column;
+    padding: 0 15px;
   }
   .about_section .about_img {
+    width: 100%;
     max-width: 280px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
+  }
+  .about_section .about_desc {
+    width: 100%;
+    padding: 0;
+  }
+  .about_section .about-content {
+    padding: 20px;
+  }
+  .about_section .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+  .about_section .skill-tag {
+    margin: 0;
+    font-size: 0.85rem;
   }
   .services_section .service_content_wrapper .single_service {
     margin: 10px auto;
@@ -1361,6 +1383,12 @@ header {
     margin: 15px;
     padding: 8px 12px;
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 50px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
