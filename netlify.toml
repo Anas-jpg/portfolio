@@ -1,8 +1,13 @@
-[build.environment]
-  NODE_VERSION = "16"
-  NODE_OPTIONS = "--openssl-legacy-provider"
-  NPM_FLAGS = "--no-audit --no-fund"
-
 [build]
-  command = "npm ci && npm run build"
-  publish = "build" 
+  command = "CI=false yarn build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "18.17.0"
+  YARN_VERSION = "1.22.19"
+  CI = "false"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 
