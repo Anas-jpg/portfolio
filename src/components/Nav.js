@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import Logo from "../assets/logo3.png";
 
 const Nav = () => {
@@ -10,19 +10,31 @@ const Nav = () => {
     const burgerMenu = burgerMenuRef.current;
     const listNav = listNavRef.current;
 
-    listNav.classList.toggle("nav-active");
-    burgerMenu.classList.toggle("toggle");
+    if (burgerMenu && listNav) {
+      listNav.classList.toggle("nav-active");
+      burgerMenu.classList.toggle("toggle");
+    }
   }
 
-  window.addEventListener("scroll", () => {
-    const nav = navRef.current;
-    // Use add/remove instead of toggle to ensure consistent class application
-     if (window.scrollY > 0) {
-         nav.classList.add("stickyNav");
-     } else {
-         nav.classList.remove("stickyNav");
-     }
-  });
+  useEffect(() => {
+    const handleScroll = () => {
+      const nav = navRef.current;
+      if (nav) {
+        if (window.scrollY > 0) {
+          nav.classList.add("stickyNav");
+        } else {
+          nav.classList.remove("stickyNav");
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    
+    // Cleanup function to remove event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); // Empty dependency array since we don't need to re-run this effect
 
   return (
     <>
