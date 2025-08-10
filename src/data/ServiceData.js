@@ -11,6 +11,22 @@ const ServiceData = [
   },
   {
     icon: <i className="fas fa-tv"></i>,
+    title: "FastAPI",
+    desc: "A modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints."
+  },
+  {
+    icon: <i className="fas fa-tv"></i>,
+    title: "React",
+    desc: "The ultimate toolbox for crafting modern user interfaces, React simplifies complex UI development, empowering developers to create seamless, responsive web applications"
+
+  },
+  {
+    icon: <i className="fas fa-tv"></i>,
+    title: "Microsoft Azure",
+    desc: "A cloud computing service created by Microsoft for building, testing, deploying, and managing applications and services through Microsoft-managed data centers."
+  },
+  {
+    icon: <i className="fas fa-tv"></i>,
     title: "DRF",
     desc: "The Django Rest Framework (DRF) simplifies API development, providing tools to build powerful, scalable, and easy-to-maintain RESTful services."
   },
@@ -25,12 +41,6 @@ const ServiceData = [
     icon: <i className="fas fa-tv"></i>,
     title: "Javascript",
     desc: "The language of interactivity, Javascript breathes life into web pages, enabling dynamic functionality and immersive user experiences"
-
-  },
-  {
-    icon: <i className="fas fa-tv"></i>,
-    title: "React",
-    desc: "The ultimate toolbox for crafting modern user interfaces, React simplifies complex UI development, empowering developers to create seamless, responsive web applications"
 
   },
   {
@@ -73,6 +83,11 @@ const ServiceData = [
     desc: "Elevate web development with simplicity and elegance, jQuery's concise yet powerful libraries simplify DOM manipulation, event handling, and Ajax interactions, enhancing user experiences effortlessly"
 
   },
+  {
+    icon: <i className="fas fa-tv"></i>,
+    title: "Langchain",
+    desc: "A framework for developing applications powered by language models."
+  }
 ]
 
 export default ServiceData
