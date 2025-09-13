@@ -1,4 +1,4 @@
-import ContactImg from "../assets/profilepic.png";
+import ContactImg from "../assets/profilepic.jpg";
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 

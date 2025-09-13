@@ -39,7 +39,7 @@ const Header = () => {
             <div className="timeline-dot"></div>
             <div className="experience-content">
               <h3>Associate Software Engineer</h3>
-              <p className="company-info"><strong>Grayphite</strong> • Nov'24 - Present</p>
+              <p className="company-info"><strong>Grayphite</strong> • Nov'24 - Apr'25</p>
               <ul>
                 <li>Building scalable back-end solutions & optimizing system performance</li>
                 <li>Leading code reviews & implementing agile methodologies</li>
