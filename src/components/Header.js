@@ -54,7 +54,7 @@ const Header = () => {
             <div className="timeline-dot"></div>
             <div className="experience-content">
               <h3>Python Django Developer Intern</h3>
-              <p className="company-info"><strong>Grayphite</strong> • Aug'24 - Sept'24</p>
+              <p className="company-info"><strong>Grayphite</strong> • Aug'24 - Oct'24</p>
               <ul>
                 <li>Mastered Python, Django & REST API development principles</li>
               </ul>
