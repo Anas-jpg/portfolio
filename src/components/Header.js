@@ -11,6 +11,14 @@ const Header = () => {
               <br />
               Crafting Digital Solutions Through Code
             </h1>
+            <a
+              href="/Muhammad_Anas_resume.pdf"
+              download
+              className="resume-download"
+              style={{marginTop: '20px', display: 'inline-block'}}
+            >
+              <button className="resume-btn">Download Resume</button>
+            </a>
           </div>
         </div>
       </header>
@@ -22,7 +30,7 @@ const Header = () => {
             <div className="timeline-dot"></div>
             <div className="experience-content">
               <h3>Associate Full Stack Engineer</h3>
-              <p className="company-info"><strong>TripleK Technologies</strong> • Apr 2025 - Present</p>
+              <p className="company-info"><strong>Kcube Ai</strong> • Apr 2025 - Present</p>
               <ul>
                 <li>Built memory-based chatbots by customizing LLMs.</li>
                 <li>Developed voice cloning features for user personalization.</li>
@@ -62,6 +70,25 @@ const Header = () => {
           </div>
         </div>
       </section>
+      <style>{`
+        .header_desc .resume-btn {
+          padding: 10px 20px;
+          background-color: #f9004d;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-weight: 600;
+          transition: all 0.3s ease;
+          text-transform: uppercase;
+        }
+
+        .header_desc .resume-btn:hover {
+          background-color: #d4003f;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(249, 0, 77, 0.2);
+        }
+      `}</style>
     </>
   );
 };

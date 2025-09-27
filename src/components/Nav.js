@@ -143,6 +143,25 @@ const Nav = () => {
           transition: all 0.3s ease;
         }
 
+        /* Match Resume button UI to LET'S TALK */
+        .resume-btn {
+          padding: 10px 20px;
+          background-color: #f9004d;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-weight: 600;
+          transition: all 0.3s ease;
+          text-transform: uppercase;
+        }
+
+        .resume-btn:hover {
+          background-color: #d4003f;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(249, 0, 77, 0.2);
+        }
+
         .contact_button button:hover {
           background-color: #d4003f;
           transform: translateY(-2px);
@@ -254,7 +273,14 @@ const Nav = () => {
               </a>
             </li>
           </ul>
-
+          <a
+            href="/Muhammad_Anas_resume.pdf"
+            download
+            className="resume-download"
+            style={{marginLeft: '10px'}}
+          >
+            <button className="resume-btn">Download Resume</button>
+          </a>
           <div className="contact_button nav_container_item">
             <a
               target="_blank"
