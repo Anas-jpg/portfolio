@@ -97,7 +97,7 @@ html {
 
 // Buttons
 .btn-primary {
-  padding: 12px 30px;
+  padding: 10px 25px;
   background-color: $themeColor;
   color: #fff;
   border: 2px solid $themeColor;
@@ -118,7 +118,7 @@ html {
 }
 
 .btn-outline {
-  padding: 12px 30px;
+  padding: 10px 25px;
   background-color: transparent;
   color: #fff;
   border: 2px solid #fff;
@@ -943,6 +943,16 @@ header {
 
   header .header_content h1 {
     font-size: $fs-h3;
+  }
+
+  header .header_content .header_btns {
+    gap: 15px;
+
+    .btn-primary,
+    .btn-outline {
+      padding: 8px 18px;
+      font-size: $fs-sm;
+    }
   }
 
   .section_title h2 {

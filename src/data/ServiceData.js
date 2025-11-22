@@ -12,7 +12,7 @@ const ServiceData = [
   {
     icon: <i className="fas fa-tv"></i>,
     title: "FastAPI",
-    desc: "A modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints."
+    desc: "A modern, fast (high-performance), web framework for building APIs with Python 3.12+ based on standard Python type hints."
   },
   {
     icon: <i className="fas fa-tv"></i>,
@@ -36,7 +36,7 @@ const ServiceData = [
     title: "HTML/CSS",
     desc: "Sculpting stunning web designs, HTML and CSS blend aesthetics with structure, turning imagination into reality"
   },
- 
+
   {
     icon: <i className="fas fa-tv"></i>,
     title: "Javascript",
