@@ -349,7 +349,6 @@ header {
       max-width: 600px;
 
       h2 {
-        font-size: 3rem; // Keeping this as is for now, or use $fs-h2? 3rem = $fs-h2 (if I set $fs-h2 to 3rem). I set $fs-h2 to 3.5rem. Let's use 3rem explicitly or define a new var. I'll use 3rem for now to match previous.
         font-size: 3rem;
         margin-bottom: 20px;
       }
@@ -375,7 +374,7 @@ header {
         color: $textSecondary;
         line-height: 1.8;
         margin-bottom: 15px;
-        font-size: $fs-base; // 1.05rem -> 1rem
+        font-size: $fs-base;
       }
 
       .specialties {
@@ -422,7 +421,7 @@ header {
         margin-bottom: 25px;
 
         i {
-          font-size: $fs-h2; // 3.5rem
+          font-size: $fs-h2;
           color: $themeColor;
           transition: 0.3s;
         }
@@ -498,7 +497,6 @@ header {
           }
 
           h3 {
-            font-size: 1.8rem; // Custom size, keep or standardize? Let's use $fs-xxl (2rem) or $fs-xl (1.5rem). 1.8 is close to 2.
             font-size: $fs-xxl;
             margin-bottom: 20px;
             color: #fff;
@@ -633,7 +631,7 @@ header {
         margin-bottom: 40px;
 
         h2 {
-          font-size: 3rem; // Match About section h2
+          font-size: 3rem;
           margin-bottom: 15px;
         }
 
@@ -847,7 +845,6 @@ header {
         }
 
         h3 {
-          font-size: 1.3rem; // Custom, close to $fs-lg or $fs-xl. Let's use $fs-xl (1.5rem) to standardize.
           font-size: $fs-xl;
           margin-bottom: 5px;
           color: #fff;
@@ -865,7 +862,6 @@ header {
 
           li {
             color: $textSecondary;
-            font-size: 0.95rem; // Close to $fs-sm (0.9rem) or $fs-base (1rem). Let's use $fs-base.
             font-size: $fs-base;
             margin-bottom: 8px;
             line-height: 1.5;
@@ -884,13 +880,23 @@ header {
   }
 
   header .header_content h1 {
-    font-size: 3.5rem; // $fs-h2
     font-size: $fs-h2;
   }
 
   .about_section .about_section_content_wrapper {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     text-align: center;
+    gap: 30px;
+
+    .about_img {
+      height: auto;
+
+      img {
+        height: auto;
+        max-height: 400px;
+        object-position: top;
+      }
+    }
   }
 
   .contact_section .contact_content_wrapper {
@@ -936,12 +942,10 @@ header {
   }
 
   header .header_content h1 {
-    font-size: 2.5rem; // $fs-h3
     font-size: $fs-h3;
   }
 
   .section_title h2 {
-    font-size: 2.5rem; // $fs-h3
     font-size: $fs-h3;
   }
 
