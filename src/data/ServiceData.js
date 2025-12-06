@@ -87,6 +87,21 @@ const ServiceData = [
     icon: <i className="fas fa-tv"></i>,
     title: "Langchain",
     desc: "A framework for developing applications powered by language models."
+  },
+  {
+    icon: <i className="fas fa-sms"></i>,
+    title: "Twilio",
+    desc: "Seamlessly integrating cloud communication channels like SMS, Voice, and WhatsApp using Twilio APIs."
+  },
+  {
+    icon: <i className="fas fa-robot"></i>,
+    title: "Open AI",
+    desc: "Leveraging state-of-the-art LLMs for intelligent text generation, embeddings, and complex reasoning tasks."
+  },
+  {
+    icon: <i className="fas fa-share-alt"></i>,
+    title: "META Graph API",
+    desc: "Connecting with Meta platforms to manage data, automate interactions, and integrate social features."
   }
 ]
 

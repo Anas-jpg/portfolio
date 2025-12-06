@@ -5,9 +5,9 @@ const Header = () => {
         <div className="header_content">
           <p>Software Developer</p>
           <h1>
-            Hello, I'm <span>Muhammad Anas</span>
+            Hello, I'm <span className="typing-text">Muhammad Anas</span>
             <br />
-            Crafting Digital Solutions Through Code
+            <span className="subtitle">Crafting Digital Solutions Through Code</span>
           </h1>
           <div className="header_btns">
             <a
@@ -39,6 +39,8 @@ const Header = () => {
               <ul>
                 <li>Built memory-based chatbots by customizing LLMs.</li>
                 <li>Developed voice cloning features for user personalization.</li>
+                <li>Implementing the RAG system.</li>
+                <li>Twilio Integrations with Open AI and META Graph API.</li>
                 <li>Performed web scraping for data collection and analysis.</li>
                 <li>Managed client communications to ensure clear delivery.</li>
                 <li>Contributed to project planning and task allocation.</li>

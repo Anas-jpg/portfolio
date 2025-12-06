@@ -29,7 +29,7 @@ const Nav = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -47,47 +47,48 @@ const Nav = () => {
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#service">Services</a></li>
+            <li><a href="#achievements">Achievements</a></li>
             <li><a href="#project">Projects</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          
+
           <div className="nav_actions">
             <ul className="social_links">
-                <li>
+              <li>
                 <a
-                    href="https://www.facebook.com/muhammad.anas.77312478/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  href="https://www.facebook.com/muhammad.anas.77312478/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                    <i className="fab fa-facebook-f"></i>
+                  <i className="fab fa-facebook-f"></i>
                 </a>
-                </li>
-                <li>
+              </li>
+              <li>
                 <a
-                    href="https://www.linkedin.com/in/muhammad-anas-fastnulhr/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  href="https://www.linkedin.com/in/muhammad-anas-fastnulhr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                    <i className="fab fa-linkedin-in"></i>
+                  <i className="fab fa-linkedin-in"></i>
                 </a>
-                </li>
+              </li>
             </ul>
             <a
-                href="/Muhammad_Anas_resume.pdf"
-                download
-                className="resume-download"
+              href="/Muhammad_Anas_resume.pdf"
+              download
+              className="resume-download"
             >
-                <button className="btn-primary">Download Resume</button>
+              <button className="btn-primary">Download Resume</button>
             </a>
             <div className="contact_button">
-                <a
+              <a
                 target="_blank"
                 href="https://www.linkedin.com/in/muhammad-anas-fastnulhr/"
                 rel="noopener noreferrer"
-                >
+              >
                 <button className="btn-outline">Let's Talk</button>
-                </a>
+              </a>
             </div>
           </div>
         </div>

@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:regular);
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans:regular,italic,700,700italic);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap');
 
 // mixin
 @mixin flex($justifyContent, $alignItems, $flexDirection) {
@@ -11,11 +10,11 @@
 }
 
 // vars
-$themeColor: #f9004d;
+$themeColor: #ff014f;
 $themeSecondary: #d4003f;
-$bgColor: #101010;
-$bgSecondary: #191919;
-$textColor: #fff;
+$bgColor: #121214;
+$bgSecondary: #1a1a1d;
+$textColor: #ffffff;
 $textSecondary: #c4cfde;
 
 // Font Sizes
@@ -34,7 +33,7 @@ $fs-xs: 0.8rem;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   outline: none;
   text-decoration: none;
 }
@@ -45,8 +44,13 @@ a {
   user-select: none;
 }
 
-h1 {
-  font-family: 'Noto Sans', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Outfit', sans-serif;
 }
 
 body {
@@ -84,7 +88,6 @@ html {
 
   h2 {
     font-size: $fs-h2;
-    font-family: 'Noto Sans', sans-serif;
     margin-bottom: 15px;
     font-weight: 700;
   }
@@ -283,26 +286,11 @@ header {
       color: $themeColor;
       text-transform: uppercase;
       letter-spacing: 3px;
-      font-weight: 500;
-      margin-bottom: 20px;
-      font-size: $fs-md;
+      margin-bottom: 40px;
     }
 
     h1 {
-      font-size: $fs-h1;
-      line-height: 1.2;
-      margin-bottom: 30px;
-      font-weight: 800;
-
-      span {
-        color: $themeColor;
-      }
-    }
-
-    .header_desc {
-      font-size: $fs-xl;
-      color: $textSecondary;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
 
     .header_btns {
@@ -872,7 +860,92 @@ header {
   }
 }
 
+
+// --- ACHIEVEMENTS SECTION ---
+.achievements_section {
+  .achievements_content_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+
+    .single_achievement {
+      padding: 40px;
+      background: #1f1f1f;
+      border-radius: 10px;
+      transition: 0.4s ease;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+
+      &:hover {
+        background: linear-gradient(145deg, #2d2d2d, #1f1f1f);
+        transform: translateY(-10px);
+        border-color: $themeColor;
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+
+        .achievement-icon i {
+          color: #fff;
+          transform: scale(1.1);
+          text-shadow: 0 0 10px $themeColor;
+        }
+
+        h3 {
+          color: $themeColor;
+        }
+      }
+
+      .achievement-icon {
+        margin-bottom: 25px;
+
+        i {
+          font-size: 3rem;
+          color: $themeColor;
+          transition: 0.3s;
+        }
+      }
+
+      h3 {
+        margin-bottom: 5px;
+        font-size: $fs-xl;
+        font-weight: 600;
+        color: #fff;
+        transition: 0.3s;
+      }
+
+      .achievement-place {
+        display: block;
+        color: $textSecondary;
+        font-size: $fs-sm;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+        font-weight: 500;
+        position: relative;
+        padding-bottom: 15px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 50px;
+          height: 2px;
+          background: $themeColor;
+          opacity: 0.5;
+        }
+      }
+
+      p {
+        color: $textSecondary;
+        line-height: 1.6;
+        font-size: $fs-base;
+      }
+    }
+  }
+}
+
 // --- MEDIA QUERIES ---
+
 @media screen and (max-width: 1024px) {
   .container {
     width: 100%;
@@ -890,11 +963,19 @@ header {
 
     .about_img {
       height: auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .image-frame {
+        max-width: 400px;
+        width: 100%;
+      }
 
       img {
         height: auto;
-        max-height: 400px;
-        object-position: top;
+        max-height: unset;
+        object-position: center;
       }
     }
   }
@@ -979,4 +1060,56 @@ header {
       }
     }
   }
+}
+
+// --- ANIMATIONS ---
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid $themeColor;
+  animation: typing 3.5s steps(30, end), blink 0.75s step-end infinite;
+  vertical-align: bottom;
+  max-width: fit-content;
+}
+
+.subtitle {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 3.5s; // Wait for typing to finish
+}
+
+header .header_content h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
