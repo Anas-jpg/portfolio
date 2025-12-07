@@ -12,8 +12,8 @@
 // vars
 $themeColor: #ff014f;
 $themeSecondary: #d4003f;
-$bgColor: #121214;
-$bgSecondary: #1a1a1d;
+$bgColor: rgba(18, 18, 20, 0.60);
+$bgSecondary: rgba(26, 26, 29, 0.60);
 $textColor: #ffffff;
 $textSecondary: #c4cfde;
 
@@ -61,6 +61,7 @@ body {
 
 section {
   padding: 100px 0px;
+  backdrop-filter: blur(10px);
 
   &:nth-child(odd) {
     background: $bgColor;
@@ -272,10 +273,7 @@ header {
   height: 100vh;
   min-height: 700px;
   @include flex(center, center, column);
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/headerBG.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: transparent;
   text-align: center;
   padding-top: 80px;
 
@@ -380,6 +378,7 @@ header {
 // --- SERVICES SECTION ---
 .services_section {
   .service_content_wrapper {
+    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;

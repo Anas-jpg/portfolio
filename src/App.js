@@ -10,10 +10,12 @@ import News from "./components/News";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Top from "./components/Top";
+import Scene from "./components/canvas/Scene";
 
 const App = () => {
   return (
     <div>
+      <Scene />
       <Top />
       <Nav />
       <Header />
