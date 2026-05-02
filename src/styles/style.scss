@@ -12,6 +12,8 @@
 // vars
 $themeColor: #ff014f;
 $themeSecondary: #d4003f;
+$themeButton: #b80037;
+$themeTextAccent: #ff6f99;
 $bgColor: rgba(18, 18, 20, 0.60);
 $bgSecondary: rgba(26, 26, 29, 0.60);
 $textColor: #ffffff;
@@ -57,10 +59,12 @@ body {
   background: #000;
   color: $textColor;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 section {
-  padding: 100px 0px;
+  padding: 88px 0;
   backdrop-filter: blur(10px);
 
   &:nth-child(odd) {
@@ -102,9 +106,9 @@ html {
 // Buttons
 .btn-primary {
   padding: 10px 25px;
-  background-color: $themeColor;
+  background-color: $themeButton;
   color: #fff;
-  border: 2px solid $themeColor;
+  border: 2px solid $themeButton;
   border-radius: 6px;
   cursor: pointer;
   font-weight: 600;
@@ -115,7 +119,8 @@ html {
 
   &:hover {
     background-color: transparent;
-    color: $themeColor;
+    color: $themeTextAccent;
+    border-color: $themeTextAccent;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px -10px rgba(249, 0, 77, 0.5);
   }
@@ -135,10 +140,47 @@ html {
   display: inline-block;
 
   &:hover {
-    background-color: $themeColor;
-    border-color: $themeColor;
+    background-color: $themeButton;
+    border-color: $themeButton;
     transform: translateY(-3px);
   }
+}
+
+.local-icon,
+.social-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.local-icon {
+  width: 1em;
+  height: 1em;
+  color: $themeColor;
+}
+
+.code-icon {
+  width: auto;
+  letter-spacing: 0;
+}
+
+.social-letter {
+  min-width: 1.2em;
+  font-size: 0.95em;
+  text-transform: uppercase;
+}
+
+.arrow-icon {
+  width: 14px;
+  height: 14px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  color: #fff;
+  transform: rotate(45deg) translateY(2px);
 }
 
 // --- NAV BAR ---
@@ -146,7 +188,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 16px 0;
   background-color: transparent;
   position: fixed;
   top: 0;
@@ -164,14 +206,15 @@ nav {
   &.stickyNav {
     background-color: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(10px);
-    padding: 15px 0;
+    padding: 10px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   }
 
   .nav_logo_container {
     img {
-      height: 50px;
+      height: 46px;
       width: auto;
+      display: block;
     }
   }
 
@@ -270,31 +313,34 @@ nav {
 
 // --- HEADER ---
 header {
-  height: 100vh;
-  min-height: 700px;
+  min-height: 100svh;
   @include flex(center, center, column);
   background: transparent;
   text-align: center;
-  padding-top: 80px;
+  padding: 120px 0 90px;
 
   .header_content {
     max-width: 800px;
+    width: min(800px, 92%);
 
     p {
       color: $themeColor;
       text-transform: uppercase;
       letter-spacing: 3px;
-      margin-bottom: 40px;
+      margin-bottom: 28px;
+      font-size: $fs-sm;
     }
 
     h1 {
-      margin-bottom: 50px;
+      margin-bottom: 38px;
+      line-height: 1.12;
     }
 
     .header_btns {
       display: flex;
       justify-content: center;
       gap: 20px;
+      flex-wrap: wrap;
     }
   }
 }
@@ -347,12 +393,12 @@ header {
 
         .skill-tag {
           background: #1f1f1f;
-          color: $themeColor;
+          color: $themeTextAccent;
           padding: 5px 15px;
           border-radius: 20px;
           font-size: $fs-sm;
           font-weight: 500;
-          border: 1px solid #333;
+          border: 1px solid rgba(255, 111, 153, 0.55);
         }
       }
 
@@ -377,6 +423,16 @@ header {
 
 // --- SERVICES SECTION ---
 .services_section {
+  .service-icon {
+    margin-bottom: 25px;
+    font-size: $fs-h2;
+    color: $themeColor;
+
+    .local-icon {
+      transition: 0.3s;
+    }
+  }
+
   .service_content_wrapper {
     margin-top: 30px;
     display: grid;
@@ -394,7 +450,7 @@ header {
         background: linear-gradient(to bottom right, #2d2d2d, #1f1f1f);
         transform: translateY(-10px);
 
-        .icon i {
+        .local-icon {
           color: #fff;
         }
 
@@ -656,9 +712,9 @@ header {
         .submit_button {
           button {
             padding: 12px 30px;
-            background-color: $themeColor;
+            background-color: $themeButton;
             color: #fff;
-            border: 2px solid $themeColor;
+            border: 2px solid $themeButton;
             border-radius: 6px;
             cursor: pointer;
             font-weight: 600;
@@ -669,7 +725,8 @@ header {
 
             &:hover {
               background-color: transparent;
-              color: $themeColor;
+              color: $themeTextAccent;
+              border-color: $themeTextAccent;
               transform: translateY(-3px);
               box-shadow: 0 10px 20px -10px rgba(249, 0, 77, 0.5);
             }
@@ -887,6 +944,12 @@ header {
           text-shadow: 0 0 10px $themeColor;
         }
 
+        .achievement-icon .local-icon {
+          color: #fff;
+          transform: scale(1.1);
+          text-shadow: 0 0 10px $themeColor;
+        }
+
         h3 {
           color: $themeColor;
         }
@@ -898,6 +961,11 @@ header {
         i {
           font-size: 3rem;
           color: $themeColor;
+          transition: 0.3s;
+        }
+
+        .local-icon {
+          font-size: 3rem;
           transition: 0.3s;
         }
       }
@@ -951,6 +1019,15 @@ header {
     padding: 0 20px;
   }
 
+  section {
+    padding: 72px 0;
+  }
+
+  header {
+    min-height: 760px;
+    padding: 110px 0 80px;
+  }
+
   header .header_content h1 {
     font-size: $fs-h2;
   }
@@ -985,15 +1062,35 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+  section {
+    padding: 58px 0;
+  }
+
   nav {
-    padding: 15px 0;
+    padding: 12px 0;
+    background-color: #000;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04);
+
+    .container {
+      max-width: 100%;
+      padding: 0 22px;
+    }
+
+    &.stickyNav {
+      background-color: #000;
+      padding: 9px 0;
+    }
+
+    .nav_logo_container img {
+      height: 40px;
+    }
 
     .nav_menu {
       position: fixed;
       top: 0;
       right: -100%;
       width: 80%;
-      height: 100vh;
+      height: 100svh;
       background: #101010;
       flex-direction: column;
       justify-content: center;
@@ -1018,11 +1115,31 @@ header {
 
     .bars {
       display: flex;
+      width: 26px;
+      height: 20px;
     }
+  }
+
+  header {
+    min-height: auto;
+    justify-content: flex-start;
+    padding: 138px 0 64px;
+  }
+
+  header .header_content {
+    width: min(100%, 620px);
+  }
+
+  header .header_content p {
+    margin-bottom: 24px;
+    font-size: $fs-xs;
+    letter-spacing: 3px;
   }
 
   header .header_content h1 {
     font-size: $fs-h3;
+    line-height: 1.15;
+    margin-bottom: 32px;
   }
 
   header .header_content .header_btns {
@@ -1111,4 +1228,59 @@ header .header_content h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0 22px;
+  }
+
+  nav {
+    padding: 10px 0;
+    background-color: #000;
+
+    .nav_logo_container img {
+      height: 36px;
+    }
+  }
+
+  header {
+    padding: 126px 0 54px;
+  }
+
+  header .header_content {
+    width: 100%;
+  }
+
+  header .header_content h1 {
+    font-size: 2.1rem;
+    line-height: 1.18;
+  }
+
+  header .header_content .header_btns {
+    gap: 12px;
+
+    a,
+    button {
+      min-width: 0;
+    }
+
+    .btn-primary,
+    .btn-outline {
+      padding: 8px 14px;
+      font-size: 0.72rem;
+    }
+  }
+
+  .section_title {
+    margin-bottom: 38px;
+  }
+
+  .top {
+    right: 20px;
+    bottom: 20px;
+    width: 42px;
+    height: 42px;
+  }
 }

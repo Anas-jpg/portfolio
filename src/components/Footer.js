@@ -10,15 +10,15 @@ const Footer = () => {
 
         <ul className="social_links">
           <li><a href="https://www.facebook.com/muhammad.anas.77312478/" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-facebook-f"></i>
+            <span className="social-letter" aria-hidden="true">f</span>
           </a></li>
           <li><a href="https://www.linkedin.com/in/muhammad-anas-fastnulhr/" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-linkedin-in"></i>
+            <span className="social-letter" aria-hidden="true">in</span>
           </a></li>
         </ul>
 
         <div className="copyright">
-          © 2025. All rights reserved by Anas
+          &copy; 2026. All rights reserved by Anas
         </div>
       </div>
     </section>

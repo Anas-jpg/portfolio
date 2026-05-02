@@ -1,4 +1,3 @@
-import SectionTitle from "./SectionTitle"
 import NewsData from "../data/NewsData"
 
 const News = () => {

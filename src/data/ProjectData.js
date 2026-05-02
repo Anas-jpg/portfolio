@@ -1,9 +1,9 @@
-import Project1 from "../assets/projects/project1.png"
-import Project2 from "../assets/projects/Social-Blogging.png"
-import Project3 from "../assets/projects/Wish-List.png"
-import Project4 from "../assets/projects/Last-Chapter.png"
-import Project5 from "../assets/projects/quiz.png"
-import Project6 from "../assets/projects/imageprocessing.png"
+import Project1 from "../assets/optimized/project1.jpg"
+import Project2 from "../assets/optimized/Social-Blogging.jpg"
+import Project3 from "../assets/optimized/Wish-List.jpg"
+import Project4 from "../assets/optimized/Last-Chapter.jpg"
+import Project5 from "../assets/optimized/quiz.jpg"
+import Project6 from "../assets/optimized/imageprocessing.jpg"
 
 const ProjectData = [
   {

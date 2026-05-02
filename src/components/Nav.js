@@ -61,7 +61,7 @@ const Nav = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fab fa-facebook-f"></i>
+                  <span className="social-letter" aria-hidden="true">f</span>
                 </a>
               </li>
               <li>
@@ -70,7 +70,7 @@ const Nav = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fab fa-linkedin-in"></i>
+                  <span className="social-letter" aria-hidden="true">in</span>
                 </a>
               </li>
             </ul>

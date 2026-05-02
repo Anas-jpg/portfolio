@@ -1,6 +1,6 @@
-import News1 from "../assets/news/news1.jpg"
-import News2 from "../assets/news/news2.jpg"
-import News3 from "../assets/news/news3.jpg"
+import News1 from "../assets/optimized/news1.jpg"
+import News2 from "../assets/optimized/news2.jpg"
+import News3 from "../assets/optimized/news3.jpg"
 
 const NewsData = [
   {

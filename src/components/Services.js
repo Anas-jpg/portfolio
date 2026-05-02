@@ -1,4 +1,3 @@
-import SectionTitle from "./SectionTitle";
 import ServiceData from "../data/ServiceData"
 
 const Services = () => {

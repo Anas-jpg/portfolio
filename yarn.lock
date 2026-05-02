@@ -1629,35 +1629,6 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@parcel/watcher-win32-x64@2.5.1":
-  version "2.5.1"
-  resolved "https://registry.npmjs.org/@parcel/watcher-win32-x64/-/watcher-win32-x64-2.5.1.tgz"
-  integrity sha512-9lHBdJITeNR++EvSQVUcaZoWupyHfXe1jZvGZ06O/5MflPcuPLtEphScIBL+AiCWBO46tDSHzWyD0uDmmZqsgA==
-
-"@parcel/watcher@^2.4.1":
-  version "2.5.1"
-  resolved "https://registry.npmjs.org/@parcel/watcher/-/watcher-2.5.1.tgz"
-  integrity sha512-dfUnCxiN9H4ap84DvD2ubjw+3vUNpstxa0TneY/Paat8a3R4uQZDLSvWjmznAY/DoahqTHl9V46HF/Zs3F29pg==
-  dependencies:
-    detect-libc "^1.0.3"
-    is-glob "^4.0.3"
-    micromatch "^4.0.5"
-    node-addon-api "^7.0.0"
-  optionalDependencies:
-    "@parcel/watcher-android-arm64" "2.5.1"
-    "@parcel/watcher-darwin-arm64" "2.5.1"
-    "@parcel/watcher-darwin-x64" "2.5.1"
-    "@parcel/watcher-freebsd-x64" "2.5.1"
-    "@parcel/watcher-linux-arm-glibc" "2.5.1"
-    "@parcel/watcher-linux-arm-musl" "2.5.1"
-    "@parcel/watcher-linux-arm64-glibc" "2.5.1"
-    "@parcel/watcher-linux-arm64-musl" "2.5.1"
-    "@parcel/watcher-linux-x64-glibc" "2.5.1"
-    "@parcel/watcher-linux-x64-musl" "2.5.1"
-    "@parcel/watcher-win32-arm64" "2.5.1"
-    "@parcel/watcher-win32-ia32" "2.5.1"
-    "@parcel/watcher-win32-x64" "2.5.1"
-
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
   resolved "https://registry.npmjs.org/@pkgjs/parseargs/-/parseargs-0.11.0.tgz"
@@ -3583,9 +3554,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001646, caniuse-lite@^1.0.30001688:
-  version "1.0.30001695"
-  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001695.tgz"
-  integrity sha512-vHyLade6wTgI2u1ec3WQBxv+2BrTERV28UXQu9LO6lZ9pYeMk34vjXFLOxo1A4UBA8XTL4njRQZdno/yYaSmWw==
+  version "1.0.30001791"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001791.tgz"
+  integrity sha512-yk0l/YSrOnFZk3UROpDLQD9+kC1l4meK/wed583AXrzoarMGJcbRi2Q4RaUYbKxYAsZ8sWmaSa/DsLmdBeI1vQ==
 
 case-sensitive-paths-webpack-plugin@^2.4.0:
   version "2.4.0"
@@ -3632,7 +3603,7 @@ check-types@^11.2.3:
   resolved "https://registry.npmjs.org/check-types/-/check-types-11.2.3.tgz"
   integrity sha512-+67P1GkJRaxQD6PKK0Et9DhwQB+vGg3PM5+aavopCpZT1lj9jeqfvpgTLAWErNj8qApkkmXlu/Ug74kmhagkXg==
 
-chokidar@^3.4.2, chokidar@^3.5.3, chokidar@^3.6.0:
+chokidar@^3.4.2, chokidar@^3.5.3, chokidar@^3.6.0, "chokidar@>=3.0.0 <4.0.0":
   version "3.6.0"
   resolved "https://registry.npmjs.org/chokidar/-/chokidar-3.6.0.tgz"
   integrity sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==
@@ -3646,13 +3617,6 @@ chokidar@^3.4.2, chokidar@^3.5.3, chokidar@^3.6.0:
     readdirp "~3.6.0"
   optionalDependencies:
     fsevents "~2.3.2"
-
-chokidar@^4.0.0:
-  version "4.0.3"
-  resolved "https://registry.npmjs.org/chokidar/-/chokidar-4.0.3.tgz"
-  integrity sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==
-  dependencies:
-    readdirp "^4.0.1"
 
 chrome-trace-event@^1.0.2:
   version "1.0.4"
@@ -4294,11 +4258,6 @@ detect-gpu@^5.0.28:
   integrity sha512-bqerEP1Ese6nt3rFkwPnGbsUF9a4q+gMmpTVVOEzoCyeCc+y7/RvJnQZJx1JwhgQI5Ntg0Kgat8Uu7XpBqnz1w==
   dependencies:
     webgl-constants "^1.1.1"
-
-detect-libc@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/detect-libc/-/detect-libc-1.0.3.tgz"
-  integrity sha512-pGjwhsmsp4kL2RTz08wcOlGN83otlqHeD/Z5T8GXZB+/YcpQ/dgo+lbU8ZsGxV0HIvqqxo9l7mqYwyYMD9bKDg==
 
 detect-newline@^3.0.0:
   version "3.1.0"
@@ -5407,6 +5366,11 @@ fs.realpath@^1.0.0:
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
 
+fsevents@^2.3.2, fsevents@~2.3.2:
+  version "2.3.3"
+  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
+  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
+
 function-bind@^1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz"
@@ -5927,10 +5891,10 @@ immer@^9.0.7:
   resolved "https://registry.npmjs.org/immer/-/immer-9.0.21.tgz"
   integrity sha512-bc4NBHqOqSfRW7POMkHd51LvClaeMXpm8dx0e8oE2GORbq5aRK7Bxl4FyzVLdGtLmvLKL7BTDBG5ACQm4HWjTA==
 
-immutable@^5.0.2:
-  version "5.1.4"
-  resolved "https://registry.npmjs.org/immutable/-/immutable-5.1.4.tgz"
-  integrity sha512-p6u1bG3YSnINT5RQmx/yRZBpenIl30kVxkTLDyHLIMk0gict704Q9n+thfDI7lTRm9vXdDYutVzXhzcThxTnXA==
+immutable@^4.0.0:
+  version "4.3.8"
+  resolved "https://registry.npmjs.org/immutable/-/immutable-4.3.8.tgz"
+  integrity sha512-d/Ld9aLbKpNwyl0KiM2CT1WYvkitQ1TSvmRtkcV8FKStiDoA7Slzgjmb/1G2yhKM1p0XeNOieaTbFZmU1d3Xuw==
 
 import-fresh@^3.1.0, import-fresh@^3.2.1:
   version "3.3.0"
@@ -7539,11 +7503,6 @@ no-case@^3.0.4:
     lower-case "^2.0.2"
     tslib "^2.0.3"
 
-node-addon-api@^7.0.0:
-  version "7.1.1"
-  resolved "https://registry.npmjs.org/node-addon-api/-/node-addon-api-7.1.1.tgz"
-  integrity sha512-5m3bsyrjFWE1xf7nz7YXdN4udnVtXK6/Yfgn5qnahL6bCkf2yKt4k3nuTKAtT4r3IG8JNR2ncsIMdZuAzJjHQQ==
-
 node-forge@^1:
   version "1.3.1"
   resolved "https://registry.npmjs.org/node-forge/-/node-forge-1.3.1.tgz"
@@ -8902,11 +8861,6 @@ readable-stream@^3.0.6:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
-readdirp@^4.0.1:
-  version "4.1.2"
-  resolved "https://registry.npmjs.org/readdirp/-/readdirp-4.1.2.tgz"
-  integrity sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==
-
 readdirp@~3.6.0:
   version "3.6.0"
   resolved "https://registry.npmjs.org/readdirp/-/readdirp-3.6.0.tgz"
@@ -9192,16 +9146,14 @@ sass-loader@^12.3.0:
     klona "^2.0.4"
     neo-async "^2.6.2"
 
-sass@^1.94.2:
-  version "1.94.2"
-  resolved "https://registry.npmjs.org/sass/-/sass-1.94.2.tgz"
-  integrity sha512-N+7WK20/wOr7CzA2snJcUSSNTCzeCGUTFY3OgeQP3mZ1aj9NMQ0mSTXwlrnd89j33zzQJGqIN52GIOmYrfq46A==
+sass@1.78.0:
+  version "1.78.0"
+  resolved "https://registry.npmjs.org/sass/-/sass-1.78.0.tgz"
+  integrity sha512-AaIqGSrjo5lA2Yg7RvFZrlXDBCp3nV4XP73GrLGvdRWWwk+8H3l0SDvq/5bA4eF+0RFPLuWUk3E+P1U/YqnpsQ==
   dependencies:
-    chokidar "^4.0.0"
-    immutable "^5.0.2"
+    chokidar ">=3.0.0 <4.0.0"
+    immutable "^4.0.0"
     source-map-js ">=0.6.2 <2.0.0"
-  optionalDependencies:
-    "@parcel/watcher" "^2.4.1"
 
 sax@~1.2.4:
   version "1.2.4"

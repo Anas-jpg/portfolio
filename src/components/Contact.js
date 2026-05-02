@@ -1,37 +1,38 @@
-import ContactImg from "../assets/profilepic.jpg";
-import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 
 const Contact = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
     
     const button = e.target.querySelector('button');
     button.disabled = true;
     button.textContent = 'Sending...';
 
-    emailjs.sendForm(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      form.current,
-      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-    )
-    .then((result) => {
-        console.log('Email sent successfully');
-        form.current.reset();
-        button.textContent = 'Message Sent!';
-        setTimeout(() => {
-          button.disabled = false;
-          button.textContent = 'Send Message';
-        }, 3000);
-    }, (error) => {
-        console.log('Failed to send email:', error);
+    try {
+      const { default: emailjs } = await import('@emailjs/browser');
+
+      await emailjs.sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      );
+
+      console.log('Email sent successfully');
+      form.current.reset();
+      button.textContent = 'Message Sent!';
+      setTimeout(() => {
         button.disabled = false;
         button.textContent = 'Send Message';
-        alert('Failed to send message. Please try again.');
-    });
+      }, 3000);
+    } catch (error) {
+      console.log('Failed to send email:', error);
+      button.disabled = false;
+      button.textContent = 'Send Message';
+      alert('Failed to send message. Please try again.');
+    }
   };
 
   const phoneNumber = '+923166344640';

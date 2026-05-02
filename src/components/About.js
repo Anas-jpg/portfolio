@@ -1,4 +1,4 @@
-import AboutImg from "../assets/profilepic.jpg";
+import AboutImg from "../assets/optimized/profilepic.jpg";
 
 const About = () => {
   return (
@@ -11,7 +11,7 @@ const About = () => {
         <div className="about_section_content_wrapper">
           <div className="about_img">
             <div className="image-frame">
-              <img alt="about section image" src={AboutImg} />
+              <img alt="Muhammad Anas" src={AboutImg} loading="lazy" decoding="async" />
             </div>
           </div>
 
