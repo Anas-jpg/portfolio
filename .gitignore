@@ -12,6 +12,13 @@
 
 # build files
 /build
+/.next
+/.migration
+/out
+/playwright-report
+/test-results
+*.tsbuildinfo
+.impeccable/config.local.json
 
 # misc
 .DS_Store

@@ -1,0 +1,6 @@
+import type { Metadata } from "next";
+import { ArrowUpRight, Mail, MessageCircle } from "lucide-react";
+import { owner } from "@/content/portfolio";
+import { ContactForm } from "@/components/site/contact-form";
+export const metadata: Metadata = { title: "Contact", description: "Get in touch about an engineering role, freelance project, or collaboration." };
+export default function Contact() { return <main id="main" className="contact-page content-width"><section className="contact-intro"><h1>Let&apos;s make<br /><span>something</span><br />work.</h1><p>Hiring for your team? Have an idea that needs an engineer? I&apos;d like to hear about it.</p><div className="direct-contact"><a href={`mailto:${owner.email}`}><Mail size={20} /><span>{owner.email}</span><ArrowUpRight size={18} /></a><a href={owner.whatsapp} target="_blank" rel="noreferrer"><MessageCircle size={20} /><span>Chat on WhatsApp</span><ArrowUpRight size={18} /></a><a href={owner.linkedin} target="_blank" rel="noreferrer">Connect on LinkedIn <ArrowUpRight size={18} /></a></div></section><section className="contact-form-section" aria-labelledby="message-heading"><h2 id="message-heading">Start a conversation.</h2><ContactForm /></section></main>; }

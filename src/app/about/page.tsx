@@ -1,0 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowUpRight, Download } from "lucide-react";
+import { experience, owner, capabilities } from "@/content/portfolio";
+import { Button } from "@/components/ui/button";
+import { ContactBand } from "@/components/site/contact-band";
+export const metadata: Metadata = { title: "About", description: "My background, experience, and approach to backend and AI engineering." };
+export default function About() { return <main id="main"><section className="about-intro content-width"><div><h1>A little about<br /><span>the person</span><br />behind the code.</h1><p>I&apos;m Muhammad Anas, a backend and AI engineer with a BS in Software Engineering from FAST NUCES.</p><p>I build Python services, RAG pipelines, agent workflows, and voice integrations. I enjoy solving problems, learning new tools, and connecting technical decisions with what a product needs.</p><Button asChild><a href={owner.resume} download>Download resume <Download size={18} /></a></Button></div><div className="about-art"><img src="/assets/plates/portrait.png" alt="Muhammad Anas" width={1413} height={1113} /><Link href="/contact/" className="text-link">Let&apos;s connect <ArrowUpRight size={18} /></Link></div></section>
+  <section className="experience-section content-width" id="experience"><div className="section-intro"><h2>My career<br />so far.</h2><p>Growing through real products, collaborative teams, and practical engineering work.</p></div><div className="experience-list">{experience.map(job => <article className="experience-row" key={job.role}><div><p className="experience-date">{job.date}</p><h3>{job.company}</h3></div><div><h4>{job.role}</h4><ul>{job.details.map(detail => <li key={detail}>{detail}</li>)}</ul></div></article>)}</div></section>
+  <section className="about-capabilities content-width"><h2>The tools follow<br />the problem.</h2><div>{capabilities.map(item => <div className="about-skill" key={item.title}><h3>{item.title}</h3><ul className="tags">{item.skills.map(skill => <li key={skill}>{skill}</li>)}</ul></div>)}<p className="education-note">My foundation includes database design and REST APIs, with production experience in Azure deployments, Docker, and GitHub Actions.</p></div></section><ContactBand /></main>; }

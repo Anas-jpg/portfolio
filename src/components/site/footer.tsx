@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { ArrowUpRight, Github, Linkedin } from "lucide-react";
+import { owner } from "@/content/portfolio";
+export function Footer() { return <footer className="site-footer"><div><Link className="footer-name" href="/">Muhammad Anas<span className="footer-dot" /></Link><p>Thoughtful software. Meaningful connections.</p></div><nav aria-label="Footer navigation"><Link href="/about/">About</Link><Link href="/projects/">Projects</Link><Link href="/writing/">Writing</Link><Link href="/contact/">Contact</Link></nav><div className="footer-links"><a href={owner.github} target="_blank" rel="noreferrer"><Github size={18} /> GitHub <ArrowUpRight size={15} /></a><a href={owner.linkedin} target="_blank" rel="noreferrer"><Linkedin size={18} /> LinkedIn <ArrowUpRight size={15} /></a><a href={owner.resume} download>Download resume <ArrowUpRight size={15} /></a></div><p className="copyright">© {new Date().getFullYear()} Muhammad Anas</p></footer>; }
